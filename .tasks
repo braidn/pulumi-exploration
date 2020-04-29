@@ -1,0 +1,10 @@
+# vim: set fenc=utf-8 ft=dosini:
+
+[file-fix]
+
+command=
+command:javascript,typescript=rome lint $(VIM_FILEPATH) --save
+cwd=<root>
+output=quickfix
+errorformat=%f:%l:%m
+save=1
